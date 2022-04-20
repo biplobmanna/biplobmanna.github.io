@@ -97,7 +97,6 @@ do
       exit 2
       ;;
     --)
-      echo "reach here"
       shift;
       break
       ;;
