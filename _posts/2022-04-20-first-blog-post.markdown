@@ -10,5 +10,5 @@ But, finally, the blog is up. Right now, there isn't much to see, or to read, bu
 
 Let's end this first blog post here. Short and bitter?
 
-Until next time,
+Until next time, <br>
 Biplob
