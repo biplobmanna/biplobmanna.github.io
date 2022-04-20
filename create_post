@@ -1,0 +1,159 @@
+#!/bin/bash
+
+# create a file inside _posts
+# with:
+# front matter
+# ---
+# layout: post
+# title:  "Proper Title Here"
+# date:   YYYY-MM-DD HH:MM:SS +0530
+# categories: category
+# ---
+# <new-line>
+
+# Configuration
+DEFAULT_LAYOUT="post"
+DEFAULT_CATEGORY="miscellaneous"
+
+# Description
+description() {
+    printf "Description:\n"
+    printf "  Create a new post inside _posts/ with title, layout, date, categories\n  as default values or as input from command line.\n"
+    printf "  The new file created is named as per: YYYY-MM-DD-title-string-data.md\n"
+}
+
+# Usage
+usage() {
+    printf "Usage:\n"
+    printf "  create_post <opt_string> <parameters>\n"
+    printf "  create_post [options]\n"
+}
+
+# Example Usage
+example_usage() {
+    printf "Example Usage:\n"
+    printf "  create_post -c \"post article\" -t \"this is a post\" -l \"post\"\n"
+    printf "  create_post --title \"this is a post\"\n"
+    printf "  create_post --category \"random category\" --title \"random title\"\n"
+}
+
+# Options
+options() {
+    printf "Options:\n"
+    printf "  -c, --category <parameter-string>\t\tset the categories to the parameter string values\n"
+    printf "  -l, --layout <parameter-string>\t\tset the layout value to the paramter string\n"
+    printf "  -t, --title <parameter-string>\t\tset the title & filename using the parameter string\n"
+    printf "  -h, --help \t\t\t\t\tdisplay the help\n"
+}
+
+# ask help
+ask_help() {
+    printf "For help, run:\n"
+    printf "  create_post -h\n"
+    printf "  create_post --help\n"
+}
+
+# Help Function
+help() {
+    # Display Help
+    description
+    printf "\n"
+    usage
+    printf "\n"
+    example_usage
+    printf "\n"
+    options
+    printf "\n"
+}
+
+
+# Parse bash command line options using GNU-getopt
+# This utility is not present in MacOS
+# Install GNU-getopt to run this script
+SHORT=c:l:t:h
+LONG=category:,layout:,title:,help
+OPTS=$(getopt --name create_post -o $SHORT --long $LONG -- "$@") 
+
+
+eval set -- "$OPTS"
+
+while :
+do
+  case "$1" in
+    -c | --category )
+      category="$2"
+      shift 2
+      ;;
+    -l | --layout )
+      layout="$2"
+      shift 2
+      ;;
+    -t | --title )
+      title="$2"
+      shift 2
+      ;;
+    -h | --help)
+      help
+      exit 2
+      ;;
+    --)
+      echo "reach here"
+      shift;
+      break
+      ;;
+  esac
+done
+
+
+# check title cannot be empty
+if [[ -z "$title" ]]; then
+    echo "--title is non-optional argument"
+    echo "Check out some example usages."
+    echo
+    example_usage
+    echo
+    ask_help
+    echo
+    exit 1 # exit with error
+fi
+
+# check layout & title
+# if empty, populate with default value
+[ -z "$category" ] && category=$DEFAULT_CATEGORY
+[ -z "$layout" ] && layout=$DEFAULT_LAYOUT
+
+
+# parse title into filename, date, time & timezone
+parsed_lowercase_title=$(echo $title | tr -c '[:alnum:]\n\r' '-' | tr 'A-Z' 'a-z')
+parsed_date=$(date +"%Y-%m-%d")
+parsed_time=$(date +"%T")
+timezone=$(date +"%z")
+# echo $parsed_lowercase_title
+# echo $parsed_date
+# echo $parsed_time
+# echo $timezone
+
+# create file based on time & title
+filename="$parsed_date-$parsed_lowercase_title.md"
+echo $filename
+# check if file exists, else create
+if [[ -f ./_posts/$filename ]]; then
+    echo "Error creating file with title='$title'"
+    echo "File: $filename already exists inside _posts/"
+    echo "Use a different 'title' to create another file."
+    echo
+    exit 1 #exit with error
+else
+    # create the file inside _posts
+    touch ./_posts/$filename
+    echo "created $filename inside _posts/"
+    echo
+fi
+
+# inject front matter into the file
+echo "---" >> ./_posts/$filename
+echo "layout: $layout" >> ./_posts/$filename
+echo "title:  \"$title\"" >> ./_posts/$filename
+echo "date: $parsed_date $parsed_time $timezone" >> ./_posts/$filename
+echo "categories: $category" >> ./_posts/$filename
+echo "---" >> ./_posts/$filename
