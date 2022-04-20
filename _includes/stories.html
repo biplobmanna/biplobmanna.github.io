@@ -1,0 +1,13 @@
+<div class="stories posts">
+    <ul class="post-list">
+        {% for post in site.posts %}
+            {% if post.categories contains 'stories' %}
+                <li><span class="post-meta">{{ post.date | date_to_string: "ordinal" }}</span>
+                    <a class="post-link" href="{{ post.url }}">
+                        <h3>{{ post.title }}</h3>
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
