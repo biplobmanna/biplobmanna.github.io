@@ -142,7 +142,7 @@ Just a small _hello-world_ kernel module. Nothing really fancy, but so much lear
 * insert any module taints the kernel
 
 Small demonstration of `lkm_01` module: <br>
-![Linux Kernel Module 01 demonstration]({{ site.url }}/assets/gif/simple-linux-kernel-lkm_01.gif)
+![Linux Kernel Module 01 demonstration](/assets/gif/simple-linux-kernel-lkm_01.gif)
 
 ### 3.2. Second kernel module
 
@@ -169,7 +169,7 @@ static ssize_t device_write(struct file *, const char *, size_t, loff_t *);
 * remove all traces once done: `make remove`
 
 Small demonstration of `lkm_02` module: <br>
-![Linux Kernel Module 02 demonstration]({{ site.url }}/assets/gif/simple-linux-kernel-lkm_02.gif)
+![Linux Kernel Module 02 demonstration](/assets/gif/simple-linux-kernel-lkm_02.gif)
 
 ## 4. Conclusion
 
