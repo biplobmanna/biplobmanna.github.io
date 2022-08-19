@@ -127,6 +127,7 @@ sudo apt install build-essential linux-headers-`uname -r`
 
 ## 3. Playing around with a simple kernel module
 
+All source files are present in the [Github Repository.](https://github.com/biplobmanna/playground-simple-kernel)
 ### 3.1. First kernel module
 
 Just a small _hello-world_ kernel module. Nothing really fancy, but so much learning here:
