@@ -56,3 +56,5 @@ exclude:
   - LICENSE
   - create_post
   - .gitignore
+  - .markdownlint.json
+  - .vscode/
