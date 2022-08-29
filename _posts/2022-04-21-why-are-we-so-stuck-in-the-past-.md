@@ -13,7 +13,7 @@ I ask myself: so what can be done here? I have no answer, alteast nothing fool p
 
 I've indulged myself in myriad explorations and experiences. I've changes cities before I felt familiar with any of them. I've kept my distance from places holding memories like undeletable hard disks. They helped. But, not a 100%
 
-The journey continues, nonetheless. 
+The journey continues, nonetheless.
 
 Until next time, <br>
 Biplob

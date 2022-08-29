@@ -11,7 +11,7 @@ The aim was simple, setup a development environment, write the module, and see i
 
 ## 1. Setup a Virtualization software
 
-The logic was simple. I am currenly rocking **_Kubuntu-22.04_** and I don't want to mess around with the _kernel_ of my main system. Therefore, I needed a virtualization software to run some Linux OS, and use that for the fiddling around with the custom kernel module.
+The logic was simple. I am currently rocking **_Kubuntu-22.04_** and I don't want to mess around with the _kernel_ of my main system. Therefore, I needed a virtualization software to run some Linux OS, and use that for the fiddling around with the custom kernel module.
 
 I've used virtualization softwares like VirtualBox, VMware before, but this time I wanted to try out _QEMU_
 
@@ -96,7 +96,7 @@ sudo systemctl restart ufw
 sudo systemctl status ufw
 ```
 
-Then, just needed to find the IP of the guest system, ssh into it, and being working. 
+Then, just needed to find the IP of the guest system, ssh into it, and being working.
 
 ```bash
 # find the IP of the host
@@ -112,7 +112,7 @@ Setting up git & SSH connection to my Github account. <br>
 1. [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) <br>
 2. [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-### 2.2. Stup VIM using my desktop configuration
+### 2.2. Setup VIM using my desktop configuration
 
 In my host machine I use Neovim, but here Vim will work. <br>
 Setting up Vim the same as my host machine.
@@ -128,6 +128,7 @@ sudo apt install build-essential linux-headers-`uname -r`
 ## 3. Playing around with a simple kernel module
 
 All source files are present in the [Github Repository.](https://github.com/biplobmanna/playground-simple-kernel)
+
 ### 3.1. First kernel module
 
 Just a small _hello-world_ kernel module. Nothing really fancy, but so much learning here:

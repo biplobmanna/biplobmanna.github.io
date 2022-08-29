@@ -34,7 +34,7 @@ $ cat /sys/class/power_supply/BAT0/charge_control_end_threshold
 
 ### Automatically set the threshold on boot
 
-In order to automaticall change the threshold on boot, let's create a `systemd` service. 
+In order to automatically change the threshold on boot, let's create a `systemd` service.
 
 ```bash
 sudo touch /etc/systemd/system/battery-charge-threshold.service
@@ -83,7 +83,7 @@ ACTION=="add", KERNEL=="asus-nb-wmi", RUN+="/bin/bash -c 'echo 80 > /sys/class/p
 
 ### Persist after hibernation
 
-By default, the threshold settings persist across hibernation, so there is not need of any additional configuration here. 
+By default, the threshold settings persist across hibernation, so there is not need of any additional configuration here.
 
 ### Conclusion
 

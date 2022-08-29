@@ -11,7 +11,7 @@ Instead of Netflix, PrimeVideo, or YouTube, whenever I get some free time, I sha
 
 I'm on my 3rd day of implementation of said tactic, and so far it's been a moderate success. Whenever I have a small unit of free time, I work on my blog, and if I have some extended time on my hand, I will work on a new project that I have recently started.
 
-The new project is something I shall blog about soon, so stay tuned. 
+The new project is something I shall blog about soon, so stay tuned.
 
 Until next time, <br>
 Biplob

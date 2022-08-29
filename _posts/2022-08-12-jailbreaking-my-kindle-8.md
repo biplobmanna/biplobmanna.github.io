@@ -14,6 +14,7 @@ Hmmm. It's basically useless now, since I do most of my reading on the iPad. I d
 And, that's how the hunt for jailbreaking started. It took me a couple of minutes to get the search query right, and land on a [forum post](https://www.mobileread.com/forums/showthread.php?t=346037) detailing the step for jailbreaking my particular version of Kindle.
 
 ### Device Info
+
 **Kindle (8th generation)** <br>
 **Wi-Fi MAC Address:** XX:XX:XX:XX:XX:XX<br>
 **Serial Number:** G000 K9xx xxxx xxxx<br>
@@ -24,7 +25,7 @@ And, that's how the hunt for jailbreaking started. It took me a couple of minute
 I followed the steps mentioned in the post, and it was a smooth sailing in the beginning. But, failure is part of the process. I got stuck in a step in the _Jailbreak_ part of the process. <br>
 > Copy ${YOUR_DEVICE}-${YOUR_FW_VERSION}.zip to .demo/
 
-The problem was simple: I did not know the correct name of my device. My search queries did not yeild the correct result I was looking for, and the results that it yeilded led me down the wrong path.
+The problem was simple: I did not know the correct name of my device. My search queries did not yield the correct result I was looking for, and the results that it yielded led me down the wrong path.
 
 I tried to [find the name of my device using the serial number the list](https://www.howtogeek.com/733834/how-to-tell-what-kindle-model-you-have/#moka_anchor_how_to_tell_table) and that led me down to believe that my **_Kindle 8_** was called _Kindle Basic 8_ or **_KB8_** in short.<br>
 However, this was not among the list of devices present inside the ZIP file. Bummer!
@@ -48,4 +49,3 @@ The files for **_KT3_** was there, and the rest of the process was a breeze. <br
 [Forum post on the instructions](https://www.mobileread.com/forums/showthread.php?t=346037)
 
 Now that the _jailbreak_ is successful, I will check out the various possibilities this offers.
-
