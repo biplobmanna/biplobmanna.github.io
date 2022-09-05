@@ -32,9 +32,11 @@ usage() {
 # Example Usage
 example_usage() {
     printf "Example Usage:\n"
-    printf "  create_post -c \"post article\" -t \"this is a post\" -l \"post\"\n"
+    printf "  create_post -c \"random_category\" -t \"this is a post\" -l \"post\"\n"
     printf "  create_post --title \"this is a post\"\n"
-    printf "  create_post --category \"random category\" --title \"random title\"\n"
+    printf "  create_post --category \"random_category\" --title \"random title\"\n"
+    printf "  create_post --category \"random_category\" --title \"random title\"\n"
+    printf "  create_post --category \"random_category\" --title \"random title\" --ignore_readme_update\n"
 }
 
 # Options
@@ -43,7 +45,15 @@ options() {
     printf "  -c, --category <parameter-string>\t\tset the categories to the parameter string values\n"
     printf "  -l, --layout <parameter-string>\t\tset the layout value to the paramter string\n"
     printf "  -t, --title <parameter-string>\t\tset the title & filename using the parameter string\n"
+    printf "  -i, --ignore_readme_update \t\t\tignore default behaviour of updating README.md\n"
     printf "  -h, --help \t\t\t\t\tdisplay the help\n"
+}
+
+ignore_readme_update() {
+    printf "\nNOTE:\n"
+    printf "By default, any new post successfully created is added to README.md\n"
+    printf "If the README.md file does not exist, then this is omited.\n"
+    printf "To suppress the default behaviour, append '-t' or '--ignore_readme_update'\n"
 }
 
 # ask help
@@ -64,15 +74,17 @@ help() {
     printf "\n"
     options
     printf "\n"
+    ignore_readme_update
+    printf "\n"
 }
 
 
 # Parse bash command line options using GNU-getopt
 # This utility is not present in MacOS
 # Install GNU-getopt to run this script
-SHORT=c:l:t:h
-LONG=category:,layout:,title:,help
-OPTS=$(getopt --name create_post -o $SHORT --long $LONG -- "$@") 
+SHORT=c:l:t:ih
+LONG=category:,layout:,title:,ignore_readme_update,help
+OPTS=$(getopt --name create_post -o $SHORT --long $LONG -- "$@")
 
 
 eval set -- "$OPTS"
@@ -92,6 +104,10 @@ do
       title="$2"
       shift 2
       ;;
+	-i | --ignore_readme_update )
+	  ignore_readme_update=1
+	  shift
+	  ;;
     -h | --help)
       help
       exit 2
@@ -123,7 +139,30 @@ fi
 
 
 # parse title into filename, date, time & timezone
-parsed_lowercase_title=$(echo $title | tr -c '[:alnum:]\n\r' '-' | tr 'A-Z' 'a-z')
+# parsing is done in 4 steps
+# 1. replace all special chars with spaces
+# 2. remove beginning spaces, trailing spaces, and convert all middle spaces & tabs into single spacing
+# 3. replace all single space into - (hyphen)
+# 4. change all chars to lowercase
+#
+# However, that would be too simple to do, without any side-effect, right?
+# The issue arises when there are multiple !, ? combinations
+# these are special characters and are expanded by bash history
+# the end result is hilarious with unwanted repitition and gibberish output
+# So, there is a need to bypass this:
+# Option 1: Use single quotes while inputing parameters
+# but, as the sole user myself, I don't think I will always remember to do this
+# So, Option 2: toggle history expansion if on, then perform string manipulation, then toggle back off
+# Alas, Option 2 doesn't work!
+# It seems that History Expansion is turned off by default
+#
+# So, now, there are 2 options:
+# 1. Disable History Expansion by default
+# 2. Alway use single quote
+# The best option is to do both
+#
+# This is what happens when you go to resolve one bug, and end up with more bugs, YAY!
+parsed_lowercase_title=$(echo $title | tr -c '[:alnum:]\~n\r' ' '| awk '{$1=$1};1' | tr -c '[:alnum:]\n\r' '-' | tr 'A-Z' 'a-z')
 parsed_date=$(date +"%Y-%m-%d")
 parsed_time=$(date +"%T")
 timezone=$(date +"%z")
@@ -156,3 +195,27 @@ echo "title:  \"$title\"" >> ./_posts/$filename
 echo "date: $parsed_date $parsed_time $timezone" >> ./_posts/$filename
 echo "categories: $category" >> ./_posts/$filename
 echo "---" >> ./_posts/$filename
+
+
+# update README.md
+update_readme() {
+	# if README.md exists, only update then
+	if [ -f "./README.md" ]; then
+        printf "* $parsed_date | " >> ./README.md
+        printf "[$category](https://biplobmanna.github.io/$category/) | " >> README.md
+        date_in_path=$(date +"%Y/%m/%d")
+        printf "[\"$title\"](https://biplobmanna.github.io/$date_in_path/$parsed_lowercase_title.html/) | " >> README.md
+        printf "[📄](https://github.com/biplobmanna/biplobmanna.github.io/blob/main/_posts/$filename)" >> README.md
+        printf "\n"  >> README.md
+    fi
+}
+
+
+# update README.md with details of blog post
+# if ignore_readme_update DNE
+if [ -z ${ignore_readme_update+x} ]; then
+  update_readme
+#   echo "README.md updated!";
+# else
+#   echo "README.md update ignored!";
+fi
