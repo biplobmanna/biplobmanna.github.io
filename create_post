@@ -162,7 +162,7 @@ fi
 # The best option is to do both
 #
 # This is what happens when you go to resolve one bug, and end up with more bugs, YAY!
-parsed_lowercase_title=$(echo $title | tr -c '[:alnum:]\~n\r' ' '| awk '{$1=$1};1' | tr -c '[:alnum:]\n\r' '-' | tr 'A-Z' 'a-z')
+parsed_lowercase_title=$(echo $title | tr -c '[:alnum:]\~n\r' ' ' | awk '{$1=$1};1' | tr -c '[:alnum:]\n\r' '-' | tr 'A-Z' 'a-z')
 parsed_date=$(date +"%Y-%m-%d")
 parsed_time=$(date +"%T")
 timezone=$(date +"%z")
@@ -196,6 +196,13 @@ echo "date: $parsed_date $parsed_time $timezone" >> ./_posts/$filename
 echo "categories: $category" >> ./_posts/$filename
 echo "---" >> ./_posts/$filename
 
+# inject TOC & its inline CSS into the page
+printf "\n<style type='text/css'>#markdown-toc::before" >> ./_posts/$filename
+printf "{content:'Table of Contents';font-weight:700}" >> ./_posts/$filename
+printf "#markdown-toc{border:3px solid #aaa;padding:1.5em;" >> ./_posts/$filename
+printf "margin-left:0;display:inline-block}</style>\n" >> ./_posts/$filename
+printf "\n* TOC\n" >> ./_posts/$filename
+printf "{:toc}\n" >> ./_posts/$filename
 
 # update README.md
 update_readme() {
