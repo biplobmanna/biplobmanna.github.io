@@ -281,3 +281,5 @@ printf "{:toc}\n" >> ./_posts/$filename
 After, everything above has executed perfectly, it will look like:
 
 ![Bash Script for generating markdown posts - generated screenshot](/assets/img/06-09-2022-jekyll-blog-post-bash-script-generation.png)
+
+[View the entire script.](https://github.com/biplobmanna/biplobmanna.github.io/blob/main/create_post)
