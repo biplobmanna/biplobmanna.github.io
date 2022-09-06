@@ -5,6 +5,11 @@ date: 2022-08-12 09:45:01 +0530
 categories: miscellaneous
 ---
 
+<style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
+
+* TOC
+{:toc}
+
 I've issued a challenge to myself - write a post each week. It will be published every Friday at or before 5 pm IST.
 
 I've always wanted to write, yet I've not written much, not much at all. Why? Laziness. Procrastination. The silent rebellion against anything structured or organized. The unacknowledged fear of failure. The discomfort of being productive when I could be wasting time on YouTube, Netflix, Mangas, Anime, and myriad other time-wasters. Each of them on their own is a trivial barrier. Together they form a wide river with turbulent waters.

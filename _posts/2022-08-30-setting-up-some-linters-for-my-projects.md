@@ -5,6 +5,11 @@ date: 2022-08-30 22:49:13 +0530
 categories: miscellaneous
 ---
 
+<style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
+
+* TOC
+{:toc}
+
 To ensure proper formatting of my projects, I want to setup some linters. For now, most of my projects use _html, css, js, jsx, md, json, yaml, toml, makefile, c, rs, cpp_ as content.
 
 For starters, I installed [Prettier](https://prettier.io/) which worked quite well, but not well enough to set a standard for all my projects. I want a standard for all my projects, and a single google search led me to [editorconfig.](https://editorconfig.org/)

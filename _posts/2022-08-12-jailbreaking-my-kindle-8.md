@@ -5,6 +5,11 @@ date: 2022-08-12 13:31:46 +0530
 categories: miscellaneous
 ---
 
+<style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
+
+* TOC
+{:toc}
+
 I suddenly noticed that my old Kindle (Kindle 8) was lying in the corner gathering dust. I picked it up, carelessly dusted it, and put it on my desk, where it lay for a couple of days.
 
 However, today, like many days recently, I was feeling bored enough to not do anything. Even YouTube and Netflix wasn't cutting it, so I closed my laptop, picked up my iPad and was about to leave my desk for the chair, when my eyes fell upon the Kindle.
@@ -13,14 +18,14 @@ Hmmm. It's basically useless now, since I do most of my reading on the iPad. I d
 
 And, that's how the hunt for jailbreaking started. It took me a couple of minutes to get the search query right, and land on a [forum post](https://www.mobileread.com/forums/showthread.php?t=346037) detailing the step for jailbreaking my particular version of Kindle.
 
-### Device Info
-
-**Kindle (8th generation)** <br>
-**Wi-Fi MAC Address:** XX:XX:XX:XX:XX:XX<br>
-**Serial Number:** G000 K9xx xxxx xxxx<br>
-**Network Capability:** Wi-Fi<br>
-**Firmware Version:** Kindle 5.14.1 (3776430030)<br>
-**Space Available:** x.xx GB free<br>
+> **Device Info** <br>
+> ...................<br>
+> **Kindle (8th generation)** <br>
+> **Wi-Fi MAC Address:** XX:XX:XX:XX:XX:XX<br>
+> **Serial Number:** G000 K9xx xxxx xxxx<br>
+> **Network Capability:** Wi-Fi<br>
+> **Firmware Version:** Kindle 5.14.1 (3776430030)<br>
+> **Space Available:** x.xx GB free<br>
 
 I followed the steps mentioned in the post, and it was a smooth sailing in the beginning. But, failure is part of the process. I got stuck in a step in the _Jailbreak_ part of the process. <br>
 > Copy ${YOUR_DEVICE}-${YOUR_FW_VERSION}.zip to .demo/

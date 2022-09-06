@@ -5,6 +5,11 @@ date: 2022-08-21 10:18:15 +0530
 categories: programming
 ---
 
+<style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
+
+* TOC
+{:toc}
+
 I have been using _Kubuntu-22.04_ on my _ASUS Vivobook S15 510un_ for a while now. While the UX has been good enough till now, there is one problem that I have lazily accepted for a while, i.e, the _battery charging threshold._
 
 I generally set the _battery charging threshold_ to _80%_ but this value is not preserved across reboot. Every time the machine is rebooted, the value is set back to _100%_ This was something I accepted as a quirk, and every time the system was rebooted, I would manually set the value back to _80%_ from the default _100%_

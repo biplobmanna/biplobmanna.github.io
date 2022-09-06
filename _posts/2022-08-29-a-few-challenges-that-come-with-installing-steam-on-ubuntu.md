@@ -5,6 +5,11 @@ date: 2022-08-29 12:29:13 +0530
 categories: miscellaneous
 ---
 
+<style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
+
+* TOC
+{:toc}
+
 Again as on a typical Sunday, being bored enough to want something to do, but not enough to start some new project; there should be something that can be a good fit for this mood, right? Why not try out some games? On Steam?
 
 I've heard that Steam is stable enough to run Windows games on Linux Machines using `Proton` Let's try out some games, shall we?
@@ -110,7 +115,7 @@ So, let's remove the current _NVIDIA drivers_ and installed fresh ones.
 ```bash
 # remove the current nvidia drivers
 sudo apt remove --purge *nvidia*
-# reboot 
+# reboot
 reboot
 ```
 

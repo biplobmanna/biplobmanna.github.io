@@ -5,6 +5,11 @@ date: 2022-05-23 11:13:30 +0530
 categories: programming
 ---
 
+<style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
+
+* TOC
+{:toc}
+
 Now that I have left my previous job, it's inevitably time to search for a new opportunity. But, this is a major source of anxiety, with doubts riddled in the back of my head. Silly ones, like, will I get a job? And, if I do, will I get a good one? When will I get it? What all do I need to do? You get the gist.
 
 I'm trying to convince myself that it's of no use to keep thinking of these thoughts. Don't worry about the outcome, and just focus on the immediate next step. When you can't see the path in front of you, it's better to focus on the next step in front of me. But, this raises the question: what is the next step in front of me. Right now, I won't be able to answer even this trivial question honestly. I need to calm myself and deliberate on this a while more. Maybe, I should also read up some posts online, do some scouring of the vast cesspool that is the internet.
