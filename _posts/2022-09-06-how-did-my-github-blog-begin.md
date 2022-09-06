@@ -105,4 +105,4 @@ Since this was my first time with Jekyll, this was a lengthy and mildly-difficul
 
 It would be many months before I actually blogged some substance, but that's how it normally goes.
 
-However, pretty soon I was fated to be bored once more, and this time try to [automate a 2 minute job by spending 2 days.](https://biplobmanna.github.io/programming/2022/09/06/bash-script-for-generating-jekyll-markdown-posts.html/)
+However, pretty soon I was fated to be bored once more, and this time try to [automate a 2 minute job by spending 2 days.](https://biplobmanna.github.io/programming/2022/09/06/bash-script-for-generating-jekyll-markdown-posts.html)
