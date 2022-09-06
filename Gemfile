@@ -17,9 +17,7 @@ gem "minima", "~> 2.5"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-end
+gem "jekyll-feed", "~> 0.12", :group => :jekyll_plugins
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
@@ -36,4 +34,4 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Additional dependencies for local env
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.7", :group => :development
