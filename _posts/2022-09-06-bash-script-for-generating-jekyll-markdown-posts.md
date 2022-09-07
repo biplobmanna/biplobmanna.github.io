@@ -171,6 +171,24 @@ The parsing is done in 4 steps:
 3. substitute space with - (hyphen)
 4. convert entire string to lowercase
 
+There's an interesting bug that was found here.
+
+Since the non-optional arguments, especially `title` can be any string, if the string [contains `!x` where `x` can be certain special characters, strings, or a combination of both, this triggers _Bash History Expansion,_](https://www.oreilly.com/library/view/learning-the-bash/1565923472/ch02s06.html) which is an unwanted behaviour here. History expansion will modify the input depending on what value `x` has.
+
+This _Bash History Expansion_ cannot be avoided in the script, since the expansion is done in the interactive shell where this script is called from.
+
+To avoid the aforementioned behaviour, there are 2 steps we can take:
+
+* Set the Bash History Expansion to _off._
+
+I've permanently set it off by adding `set +H` to my `.bashrc` since I can't imagine any situation where this Bash History Expansion to be useful.
+
+* Use ' (single-quote) instead of " (double-quote) while entering strings.
+
+This is a lazy alternative, but should be used to avoid errors.
+
+In my case, I couldn't be bothered to remember to use ' (single-quote) every time, so setting off Bash Expansion was the way to go.
+
 ### Parse date, time, timezone
 
 Date, time, and timezone will be used in filename & front matter.
