@@ -208,11 +208,11 @@ printf "{:toc}\n" >> ./_posts/$filename
 update_readme() {
 	# if README.md exists, only update then
 	if [ -f "./README.md" ]; then
-        printf "* $parsed_date | " >> ./README.md
+        printf "| $parsed_date | " >> ./README.md
         printf "[$category](https://biplobmanna.github.io/$category) | " >> README.md
         date_in_path=$(date +"%Y/%m/%d")
         printf "[\"$title\"](https://biplobmanna.github.io/$category/$date_in_path/$parsed_lowercase_title.html) | " >> README.md
-        printf "[📄](https://github.com/biplobmanna/biplobmanna.github.io/blob/main/_posts/$filename)" >> README.md
+        printf "[📄](https://github.com/biplobmanna/biplobmanna.github.io/blob/main/_posts/$filename) |" >> README.md
         printf "\n"  >> README.md
     fi
 }
