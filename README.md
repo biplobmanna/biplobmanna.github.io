@@ -1,12 +1,14 @@
 # Biplob Manna's Blog
 
-This is my [personal blog](https://biplobmanna.github.io/) where I update whatever, which falls loosely into one of the categories:
+This is my [personal blog](https://biplobmanna.github.io/) where I update whatever I want.
 
-* [programming](https://biplobmanna.github.io/programming/)
-* [miscellaneous](https://biplobmanna.github.io/miscellaneous/)
-* [poems](https://biplobmanna.github.io/poems/)
-* [songs](https://biplobmanna.github.io/songs/)
-* [stories.](https://biplobmanna.github.io/stories/)
+| Category of Content |
+|---------------------|
+| [programming](https://biplobmanna.github.io/programming/) |
+| [miscellaneous](https://biplobmanna.github.io/miscellaneous/) |
+| [poems](https://biplobmanna.github.io/poems/) |
+| [songs](https://biplobmanna.github.io/songs/) |
+| [stories.](https://biplobmanna.github.io/stories/) |
 
 ## List of Posts
 
