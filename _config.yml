@@ -50,7 +50,7 @@ show_excerpts: true
 # minima theme config
 minima:
     date_format: "%Y-%m-%d %H:%M"
-    skin: solarized-light
+    skin: solarized
     social_links:
         github: biplobmanna
         twitter: biplobmanna
