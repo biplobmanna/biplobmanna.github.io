@@ -194,6 +194,8 @@ echo "layout: $layout" >> ./_posts/$filename
 echo "title:  \"$title\"" >> ./_posts/$filename
 echo "date: $parsed_date $parsed_time $timezone" >> ./_posts/$filename
 echo "categories: $category" >> ./_posts/$filename
+printf "description: >- \n\tAdd a post summary here...\n" >> ./_posts/$filename
+echo "tags: [$category]" >> ./_posts/$filename
 echo "---" >> ./_posts/$filename
 
 # inject TOC & its inline CSS into the page
