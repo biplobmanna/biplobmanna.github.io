@@ -22,6 +22,8 @@ title: Biplob's Bloggy Blog
 tagline: Side Projects, Automation, Random Stuff
 author:
     name: Biplob Manna
+    url: "https://biplobmanna.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
 description: >- # this means to ignore newlines until "baseurl:"
     A blog about side projects, lazy automation, trying new stuff, poems, stories, and myriad miscellaneous
     stuff that is interesting.
@@ -32,6 +34,14 @@ url: "https://biplobmanna.github.io" # the base hostname & protocol for your sit
 twitter:
     username: biplobmanna
     card: summary_large_image
+links:
+    name: Biplob Manna
+    links:
+        - https://github.com/biplobmanna
+        - https://twitter.com/biplobmanna
+        - https://www.linkedin.com/in/biplobmanna/
+        - https://stackoverflow.com/users/5791214/biplobmanna
+        - https://www.facebook.com/biplobmanna
 
 # only shown when the first thing in the page is a paragraph
 # which is not the case for my posts, so this essentially does nothing
@@ -46,6 +56,7 @@ minima:
         twitter: biplobmanna
         linkedin: biplobmanna
         stackoverflow: 5791214/biplobmanna
+        facebook: biplobmanna
 
 # Build settings
 # theme: minima
