@@ -23,7 +23,7 @@ title: Biplob's Bloggy Blog
 tagline: Side Projects, Automation, Random Stuff
 author:
     name: Biplob Manna
-    email: noemail@noemail.com
+    # email: noemail@noemail.com
 description: >- # this means to ignore newlines until "baseurl:"
     A blog about side projects, lazy automation, trying new stuff, poems, stories, and myriad miscellaneous
     stuff that is interesting.
@@ -47,9 +47,12 @@ minima:
 # theme: minima
 remote_theme: jekyll/minima
 
+ignore_theme_config: true
+
 plugins:
     - jekyll-feed
     - jekyll-remote-theme
+    - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.

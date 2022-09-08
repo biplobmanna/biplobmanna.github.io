@@ -36,3 +36,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "webrick", "~> 1.7", :group => :development
 
 gem "jekyll-remote-theme", "~> 0.4.3", :group => :jekyll_plugins
+
+gem "jekyll-seo-tag", "~> 2.8"
