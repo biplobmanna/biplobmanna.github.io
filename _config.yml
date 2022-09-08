@@ -36,7 +36,7 @@ twitter:
     card: summary
 
 minima:
-    skin: dark
+    skin: solarized-dark
     date_format: "%Y-%m-%d %H:%M"
     social_links:
         github: biplobmanna
@@ -47,6 +47,7 @@ remote_theme: jekyll/minima
 
 plugins:
     - jekyll-feed
+    - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
