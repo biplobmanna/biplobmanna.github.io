@@ -38,3 +38,5 @@ gem "webrick", "~> 1.7", :group => :development
 gem "jekyll-remote-theme", "~> 0.4.3", :group => :jekyll_plugins
 
 gem "jekyll-seo-tag", "~> 2.8"
+
+gem "jekyll-sitemap", "~> 1.4", :group => :jekyll_plugins
