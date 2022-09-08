@@ -21,26 +21,28 @@
 title: Biplob's Bloggy Blog
 # email: noemail@noemail.com
 tagline: Side Projects, Automation, Random Stuff
+author:
+    name: Biplob Manna
+    email: noemail@noemail.com
 description: >- # this means to ignore newlines until "baseurl:"
     A blog about side projects, lazy automation, trying new stuff, poems, stories, and myriad miscellaneous
     stuff that is interesting.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "biplobmanna.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-author:
-    name: Biplob Manna
-    email: noemail@noemail.com
-show_excerpts: true
 
 twitter:
     username: biplobmanna
     card: summary
 
+show_excerpts: true
+
 minima:
-    skin: solarized-dark
     date_format: "%Y-%m-%d %H:%M"
+    skin: solarized-light
     social_links:
         github: biplobmanna
-
+        twitter: biplobmanna
+        linkedin: biplobmanna
 # Build settings
 # theme: minima
 remote_theme: jekyll/minima
