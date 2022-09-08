@@ -45,6 +45,8 @@ minima:
         github: biplobmanna
         twitter: biplobmanna
         linkedin: biplobmanna
+        stackoverflow: 5791214/biplobmanna
+
 # Build settings
 # theme: minima
 remote_theme: jekyll/minima
