@@ -46,6 +46,8 @@ This automation is to be done using a _bash_ script. Since my development enviro
 
 The bash script will take in arguments when the script is called form the terminal.
 
+![The Working Bash Script to generate posts](/assets/gif/jekyll-post-bash-script-working.gif)
+
 ## Parsing arguments in Bash script
 
 For the aforementioned requirements, we need _category, title, layout_ as option-arguments. Since this is a bash script, let's also add _help_ as another category.

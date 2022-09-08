@@ -155,6 +155,8 @@ On top of that, adding some custom rules to Prettier in `prettierrc.json`
 }
 ```
 
+![Using Prettier to format some HTML](/assets/gif/setup-linter-prettier-format-code.gif)
+
 And, with that the setup of linting for my projects is complete. For now.
 
 But, this also creates some more inconveniences:

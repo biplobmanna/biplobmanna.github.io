@@ -163,6 +163,8 @@ fi
 
 The above injection will add a row into the table.
 
+![Bash Script to inject Links into README](/assets/gif/jekyll-README-links-generation-bash-script.gif)
+
 [VIEW FULL SCRIPT](https://github.com/biplobmanna/biplobmanna.github.io/blob/main/create_post)
 
 ## Some boring anecdotes

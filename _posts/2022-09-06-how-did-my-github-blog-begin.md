@@ -101,6 +101,8 @@ Each of those HTML files contained logic to lists all posts belonging to that ca
 
 With this much, my [personal blog](https://biplobmanna.github.io/) was up and running.
 
+![Biplob's Bloggy Blog](/assets/img/06-09-2022-how-my-blog-began-blog-screenshot.png)
+
 Since this was my first time with Jekyll, this was a lengthy and mildly-difficult start. Over time, I was going to get more comfortable.
 
 It would be many months before I actually blogged some substance, but that's how it normally goes.
