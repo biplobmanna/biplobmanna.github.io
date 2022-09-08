@@ -33,10 +33,11 @@ twitter:
     username: biplobmanna
     card: summary
 # Build settings
-# theme: minima
+theme: minima
+
 plugins:
     - jekyll-feed
-    # - jekyll-remote-theme
+    - jekyll-remote-theme
 
 remote_theme: jekyll/minima
 
