@@ -3,6 +3,9 @@ layout: post
 title:  "How did my GitHub Blog begin?"
 date: 2022-09-06 21:57:22 +0530
 categories: programming
+description: >-
+  The story behind the creation of my Github blog in Jekyll.
+tags: [programming, jekyll-blog, setup, jekyll, ruby]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
@@ -34,6 +37,8 @@ I already had a Github Page setup for this task a couple of years back, when I f
 
 Everything had to be built from scratch.
 
+---
+
 ## First Few Steps
 
 The first thing that I did was to remove the old repository of my Github Blog.
@@ -45,6 +50,8 @@ Next, I started searching for themes for my blog. I wanted something simple, min
 After a bit of a tumble, and a rumble, and a stumble, I got everything up and running, both in my local development environment as well as in my Github Pages.
 
 Then I posted my [first, but cringey, blog post.](https://biplobmanna.github.io/miscellaneous/2022/04/20/first-blog-post.html)
+
+---
 
 ## A Touch of Personalization
 
@@ -97,6 +104,8 @@ Each of those HTML files contained logic to lists all posts belonging to that ca
 
 {%endraw%}
 
+---
+
 ## All's well that ends well
 
 With this much, my [personal blog](https://biplobmanna.github.io/) was up and running.
@@ -108,3 +117,13 @@ Since this was my first time with Jekyll, this was a lengthy and mildly-difficul
 It would be many months before I actually blogged some substance, but that's how it normally goes.
 
 However, pretty soon I was fated to be bored once more, and this time try to [automate a 2 minute job by spending 2 days.](https://biplobmanna.github.io/programming/2022/09/06/bash-script-for-generating-jekyll-markdown-posts.html)
+
+---
+
+**Check out the entire series of posts related to Blog Setup**
+
+* [How did my GitHub Blog begin?](https://biplobmanna.github.io/programming/2022/09/06/how-did-my-github-blog-begin.html)
+* [Bash Script for generating Jekyll Markdown posts](https://biplobmanna.github.io/programming/2022/09/06/bash-script-for-generating-jekyll-markdown-posts.html)
+* [Update Bash Script to inject links for each Jekyll post created](https://biplobmanna.github.io/programming/2022/09/06/update-bash-script-to-inject-links-for-each-jekyll-post-created.html)
+* [Add metadata to my Jekyll Blog](https://biplobmanna.github.io/programming/2022/09/07/add-metadata-to-my-jekyll-blog.html)
+* [Theming my Jekyll Github Blog](https://biplobmanna.github.io/programming/2022/09/08/theming-my-jekyll-github-blog.html)

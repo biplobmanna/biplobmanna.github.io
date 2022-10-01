@@ -138,7 +138,7 @@ Credit and my thanks, goes to the [original author.](https://codepen.io/arman_ba
 
 My Jekyll Blog modification is complete for now.
 
-#### Check out the entire series of posts related to Blog Setup
+**Check out the entire series of posts related to Blog Setup**
 
 * [How did my GitHub Blog begin?](https://biplobmanna.github.io/programming/2022/09/06/how-did-my-github-blog-begin.html)
 * [Bash Script for generating Jekyll Markdown posts](https://biplobmanna.github.io/programming/2022/09/06/bash-script-for-generating-jekyll-markdown-posts.html)

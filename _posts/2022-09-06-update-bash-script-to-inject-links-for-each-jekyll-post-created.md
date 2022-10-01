@@ -4,7 +4,7 @@ title:  "Update Bash Script to inject links for each Jekyll post created"
 date: 2022-09-06 22:58:56 +0530
 categories: programming
 description: >-
-  New jekyll-blog-post generation with front-matter, inline-CSS, link-generation using a Bash Script.
+  Generate link for every new jekyll-blog-post create, and populate in README.
 tags: [programming, bash, script, automate, jekyll-blog]
 ---
 
@@ -229,7 +229,7 @@ Someday, maybe.
 
 ---
 
-#### Check out the entire series of posts related to Blog Setup
+**Check out the entire series of posts related to Blog Setup**
 
 * [How did my GitHub Blog begin?](https://biplobmanna.github.io/programming/2022/09/06/how-did-my-github-blog-begin.html)
 * [Bash Script for generating Jekyll Markdown posts](https://biplobmanna.github.io/programming/2022/09/06/bash-script-for-generating-jekyll-markdown-posts.html)

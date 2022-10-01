@@ -72,7 +72,7 @@ Once the above steps are done, we need to request indexing from Google. This doe
 
 With that, the basic setup for SEO is done.
 
-#### Check out the entire series of posts related to Blog Setup
+**Check out the entire series of posts related to Blog Setup**
 
 * [How did my GitHub Blog begin?](https://biplobmanna.github.io/programming/2022/09/06/how-did-my-github-blog-begin.html)
 * [Bash Script for generating Jekyll Markdown posts](https://biplobmanna.github.io/programming/2022/09/06/bash-script-for-generating-jekyll-markdown-posts.html)
