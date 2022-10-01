@@ -3,27 +3,15 @@ layout: post
 title:  "Add metadata to my Jekyll Blog"
 date: 2022-09-07 07:44:11 +0530
 categories: programming
-description: test
-tags: [programming]
+description: >-
+  SEO Optimizations for my Jekyll Blog. Adding meta tags. Google Site Verification. Sitemap Generation.
+tags: [programming, seo, jekyll-blog, google-search-console, meta-tag, optimization]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
 
 * TOC
 {:toc}
-
-## TODO
-
-* Things to try out:
-  * seo meta tag configured in minima theme
-  * add meta tag in head
-  * add summary, description in posts
-  * add seo plugin & configure all requirements
-  * checkout other plugins in head.html
-  * add sitemap
-
-1. Google Site Verification
-2. Add minima tags in config
 
 ## Add SEO \<meta\> tags
 
@@ -60,6 +48,8 @@ Also, adding social links to be included in the meta tags as well. These include
 
  For more details, the [official configuration documentation can be found here.](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md)
 
+---
+
 ## Verification and Indexing in Google Search Console
 
 ### Verification using Google Site Verification
@@ -78,6 +68,14 @@ Once the sitemap is generated, we need to submit the sitemap link in [Google Sea
 
 Once the above steps are done, we need to request indexing from Google. This does not ensure that the page will get indexed, but if it does, it does not specify when that will happen. It's a waiting game now.
 
-## Conclusion
+---
 
-With that, the basic setup for SEO is done. There are ofcourse a mountain of steps that can be taken to boost SEO, for my purpose this much will do.
+With that, the basic setup for SEO is done.
+
+#### Check out the entire series of posts related to Blog Setup
+
+* [How did my GitHub Blog begin?](https://biplobmanna.github.io/programming/2022/09/06/how-did-my-github-blog-begin.html)
+* [Bash Script for generating Jekyll Markdown posts](https://biplobmanna.github.io/programming/2022/09/06/bash-script-for-generating-jekyll-markdown-posts.html)
+* [Update Bash Script to inject links for each Jekyll post created](https://biplobmanna.github.io/programming/2022/09/06/update-bash-script-to-inject-links-for-each-jekyll-post-created.html)
+* [Add metadata to my Jekyll Blog](https://biplobmanna.github.io/programming/2022/09/07/add-metadata-to-my-jekyll-blog.html)
+* [Theming my Jekyll Github Blog](https://biplobmanna.github.io/programming/2022/09/08/theming-my-jekyll-github-blog.html)
