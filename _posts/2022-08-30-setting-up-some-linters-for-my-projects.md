@@ -3,6 +3,9 @@ layout: post
 title:  "Setting up some linters for my projects"
 date: 2022-08-30 22:49:13 +0530
 categories: miscellaneous
+description: >-
+  Setting up linters to streamline development. Prettier. EditorConfig. ESLint.
+tags: [jekyll-blog, miscellaneous, vscode, prettier, eslint, editorconfig, linters]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
@@ -15,6 +18,8 @@ To ensure proper formatting of my projects, I want to setup some linters. For no
 For starters, I installed [Prettier](https://prettier.io/) which worked quite well, but not well enough to set a standard for all my projects. I want a standard for all my projects, and a single google search led me to [editorconfig.](https://editorconfig.org/)
 
 **EditorConfig** would help with the standardization, and also resolve the issue with tabs, space, tab-width that I was having in VSCode.
+
+---
 
 ## Setting up EditorConfig
 
@@ -67,6 +72,8 @@ To achieve this, modify the EditorConfig settings in VSCode:
 
 ![EditorConfig Settings in VSCode](/assets/img/30-08-2022-editorconfig-settings-vscode.png)
 
+---
+
 ## Setting up ESLint
 
 Now the next step was to setup ESLint for the JS (Node/React) projects, which are among the majority.
@@ -109,6 +116,8 @@ Example `.eslintrc.json`
  }
 }
 ```
+
+---
 
 ## Setting up Prettier
 
@@ -156,6 +165,8 @@ On top of that, adding some custom rules to Prettier in `prettierrc.json`
 ```
 
 ![Using Prettier to format some HTML](/assets/gif/setup-linter-prettier-format-code.gif)
+
+---
 
 And, with that the setup of linting for my projects is complete. For now.
 

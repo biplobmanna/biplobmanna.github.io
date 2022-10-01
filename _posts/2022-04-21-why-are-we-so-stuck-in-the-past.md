@@ -3,6 +3,9 @@ layout: post
 title:  "Why are we so stuck in the past?"
 date: 2022-04-21 22:35:16 +0530
 categories: miscellaneous
+description: >-
+  Thoughts on why we are stuck in the past.
+tags: [jekyll-blog, miscellaneous, thoughts]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>

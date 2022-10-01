@@ -3,6 +3,9 @@ layout: post
 title:  "Jailbreaking my Kindle 8"
 date: 2022-08-12 13:31:46 +0530
 categories: miscellaneous
+description: >-
+  Jailbreaking my Kindle 8.
+tags: [jekyll-blog, programming, jailbreak, kindle, kindle8, koa1]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>

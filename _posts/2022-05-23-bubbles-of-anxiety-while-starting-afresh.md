@@ -3,6 +3,9 @@ layout: post
 title:  "Bubbles of anxiety while starting afresh"
 date: 2022-05-23 11:13:30 +0530
 categories: programming
+description: >-
+  Thoughts and anxieties that surface when starting again.
+tags: [jekyll-blog, programming, thoughts]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>

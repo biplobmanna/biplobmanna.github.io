@@ -3,6 +3,9 @@ layout: post
 title:  "A few challenges that come with installing Steam on Ubuntu"
 date: 2022-08-29 12:29:13 +0530
 categories: miscellaneous
+description: >-
+  Installing Steam on Ubuntu, and resolving all issues and errors that come with it.
+tags: [jekyll-blog, miscellaneous, steam, ubuntu, steam-install]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
@@ -33,6 +36,8 @@ The shortlisted YouTube videos are below:
 
 The list of games that I eventually tried out are:
 ![Casual Games I recently tried out on Steam](/assets/img/29-08-2022-casual-games-list-trying-on-steam-.png)
+
+---
 
 ## Installing and setting up Steam
 
@@ -90,6 +95,8 @@ which upon some google search revealed that this was an issue due to my HD being
 
 **Finally got the game working.**
 
+---
+
 ## Resolving issue with Nvidia drivers
 
 Now that the game was working, I wanted to switch the GPU profile from `on-demand` to `nvidia` so that I could actually use the Graphics Card.
@@ -125,6 +132,10 @@ The system will reboot with the default `nouveau` drivers which will work with t
 
 Then, changing the `prime-select` to `nvidia` and reboot.
 
+---
+
 ### Finally, the games started working
 
-However, I still had doubts whether the GPU was actually being used to render or not. To get a good view of the GPU usage, I [installed _nvtop_](https://github.com/Syllo/nvtop) which is similar to _htop_ but for GPUs.
+However, I still had doubts whether the GPU was actually being used to render or not.
+
+To get a good view of the GPU usage, I [installed _nvtop_](https://github.com/Syllo/nvtop) which is similar to _htop_ but for GPUs.

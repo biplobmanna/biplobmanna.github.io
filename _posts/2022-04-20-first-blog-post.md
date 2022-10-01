@@ -3,6 +3,9 @@ layout: post
 title:  "First Blog Post"
 date:   2022-04-20 11:45:00 +0530
 categories: miscellaneous
+description: >-
+  My first blog post. Blog created using Jekyll. Hosted on GitHub Pages.
+tags: [programming, jekyll-blog]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>

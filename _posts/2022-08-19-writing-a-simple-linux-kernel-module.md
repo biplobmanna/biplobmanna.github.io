@@ -3,6 +3,9 @@ layout: post
 title:  "Writing a simple linux kernel module"
 date: 2022-08-19 08:18:15 +0530
 categories: programming
+description: >-
+  Development setup & writing a simple kernel module.
+tags: [jekyll-blog, programming, linux, kernel, linux-kernel-module, qevm, virtualization]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
@@ -13,6 +16,8 @@ categories: programming
 My interest into Low Level programming continues to grow, and fiddling around with a simple Linux Kernel module was just one step on that path.
 
 The aim was simple, setup a development environment, write the module, and see it working. Simply said, but not so simple to implement.
+
+---
 
 ## 1. Setup a Virtualization software
 
@@ -108,6 +113,8 @@ Then, just needed to find the IP of the guest system, ssh into it, and being wor
 hostname -I
 ```
 
+---
+
 ## 2. Setup Development environment
 
 ### 2.1. Setup git
@@ -129,6 +136,8 @@ Install the essential development tools & kernel header necessary for this to wo
 ```bash
 sudo apt install build-essential linux-headers-`uname -r`
 ```
+
+---
 
 ## 3. Playing around with a simple kernel module
 
@@ -177,6 +186,6 @@ static ssize_t device_write(struct file *, const char *, size_t, loff_t *);
 Small demonstration of `lkm_02` module: <br>
 ![Linux Kernel Module 02 demonstration](/assets/gif/simple-linux-kernel-lkm_02.gif)
 
-## 4. Conclusion
+---
 
 It was a good experience, and although I got stuck multiple times in the middle, even in this small project, I ended up learning way too much. Next time, I will tackle a bigger project.

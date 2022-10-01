@@ -3,6 +3,9 @@ layout: post
 title:  "Coding as a way to pass time"
 date: 2022-04-21 08:41:21 +0530
 categories: programming
+description: >-
+  Thoughts on casual coding as a means to pass time.
+tags: [programming, jekyll-blog, thoughts]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>

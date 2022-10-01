@@ -3,6 +3,9 @@ layout: post
 title:  "Rules for Writing and Posting"
 date: 2022-08-12 09:45:01 +0530
 categories: miscellaneous
+description: >-
+  Let's set aside some rules for writing and posting.
+tags: [miscellaneous, jekyll-blog, thoughts]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
