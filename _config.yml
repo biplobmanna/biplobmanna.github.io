@@ -22,15 +22,15 @@ title: Biplob's Bloggy Blog
 tagline: Side Projects, Automation, Random Stuff
 author:
     name: Biplob Manna
-    url: "https://biplobmanna.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+    url: "https://biplobmanna.github.io"
 
-description: >- # this means to ignore newlines until "baseurl:"
-    A blog about side projects, lazy automation, trying new stuff, poems, stories, and myriad miscellaneous
-    stuff that is interesting.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://biplobmanna.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+description: >-
+    A blog about side projects, lazy automation,
+    trying new stuff, poems, stories, and myriad
+    miscellaneous stuff that is interesting.
+baseurl: ""
+url: "https://biplobmanna.github.io"
 
-# more jekyll-seo-tag metadata config
 twitter:
     username: biplobmanna
     card: summary_large_image
