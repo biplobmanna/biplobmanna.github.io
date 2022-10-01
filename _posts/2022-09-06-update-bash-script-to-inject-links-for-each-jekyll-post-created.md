@@ -3,6 +3,9 @@ layout: post
 title:  "Update Bash Script to inject links for each Jekyll post created"
 date: 2022-09-06 22:58:56 +0530
 categories: programming
+description: >-
+  New jekyll-blog-post generation with front-matter, inline-CSS, link-generation using a Bash Script.
+tags: [programming, bash, script, automate, jekyll-blog]
 ---
 
 <style type='text/css'>#markdown-toc::before{content:'Table of Contents';font-weight:700}#markdown-toc{border:3px solid #aaa;padding:1.5em;margin-left:0;display:inline-block}</style>
@@ -24,6 +27,8 @@ The README in the actual repo still displayed the _default_ contents that come w
 
 Let's customize the README in some way which is actually useful, right?
 
+---
+
 ## What's the idea?
 
 The README will have two table with links in it.
@@ -33,6 +38,8 @@ The first table will contain links of the categories in my blog.
 The second table will contain links of all the posts.
 
 Pretty simple really.
+
+---
 
 ## Generating Links
 
@@ -122,6 +129,8 @@ The `filename` is stored inside `$filename`
 https://github.com/biplobmanna/biplobmanna.github.io/blob/main/_posts/$filename
 ```
 
+---
+
 ## Injecting into Markdown
 
 The above generated links are attached to relevant text in markdown format:
@@ -167,7 +176,9 @@ The above injection will add a row into the table.
 
 [VIEW FULL SCRIPT](https://github.com/biplobmanna/biplobmanna.github.io/blob/main/create_post)
 
-## Some boring anecdotes
+---
+
+## Some anecdotes
 
 ### The frustration of manual work
 
@@ -214,4 +225,14 @@ Well, I first deleted the post from GitHub. Then I changed the time to be somewh
 
 Is this a bug? Do I report it?
 
-Kinda funky anecdote nonetheless.
+Someday, maybe.
+
+---
+
+#### Check out the entire series of posts related to Blog Setup
+
+* [How did my GitHub Blog begin?](https://biplobmanna.github.io/programming/2022/09/06/how-did-my-github-blog-begin.html)
+* [Bash Script for generating Jekyll Markdown posts](https://biplobmanna.github.io/programming/2022/09/06/bash-script-for-generating-jekyll-markdown-posts.html)
+* [Update Bash Script to inject links for each Jekyll post created](https://biplobmanna.github.io/programming/2022/09/06/update-bash-script-to-inject-links-for-each-jekyll-post-created.html)
+* [Add metadata to my Jekyll Blog](https://biplobmanna.github.io/programming/2022/09/07/add-metadata-to-my-jekyll-blog.html)
+* [Theming my Jekyll Github Blog](https://biplobmanna.github.io/programming/2022/09/08/theming-my-jekyll-github-blog.html)
