@@ -60,7 +60,7 @@ minima:
 
 # Build settings
 # theme: minima
-remote_theme: jekyll/minima
+remote_theme: jekyll/minima@3fc238ba038071eb1bb11a9a28600a0bd39b9d0c
 
 ignore_theme_config: true
 
@@ -96,3 +96,4 @@ exclude:
     - .markdownlint.json
     - .vscode/
     - .editorconfig
+    - _drafts/
