@@ -1,0 +1,11 @@
+services:
+    jekyll:
+        image: jekyll/jekyll
+        container_name: blog
+        stdin_open: true
+        tty: true
+        ports:
+            - "4040:4000"
+        volumes:
+            - ./:/srv/jekyll
+        command: bash -c tail -f /dev/null
